@@ -2,6 +2,34 @@
 
 
 if (!window.Framer) {window._bridge('runtime.error', {message:'[framer.js] Framer library missing or corrupt. Select File → Update Framer.'})}
+window.__imported__ = window.__imported__ || {};
+window.__imported__["Start screen@1x/layers.json.js"] = [
+	{
+		"id": 10,
+		"name": "Grupp_1",
+		"layerFrame": {
+			"x": 0,
+			"y": 0,
+			"width": 750,
+			"height": 1334
+		},
+		"maskFrame": null,
+		"image": {
+			"path": "images/Grupp_1.png",
+			"frame": {
+				"x": 0,
+				"y": 0,
+				"width": 750,
+				"height": 1332
+			}
+		},
+		"imageType": "png",
+		"children": [
+			
+		],
+		"modification": "559382427"
+	}
+]
 if (typeof(DeviceComponent) !== "undefined") {DeviceComponent.Devices["iphone-6-silver"].deviceImageJP2 = false};
 window.Framer.Defaults.DeviceView = {"deviceScale":"fit","selectedHand":"","deviceType":"apple-iphone-6s-silver","contentScale":1,"orientation":0};
 
