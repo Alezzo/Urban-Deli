@@ -6,7 +6,7 @@ vnc = new ViewNavigationController
 vnc.animationOptions =
 	curve: "ease-in-out"
 	time: 0.3
-
+	
 # Import file "Start screen"
 psd = Framer.Importer.load("imported/Start screen@1x")
 
@@ -15,7 +15,6 @@ psd = new Layer
 	name: "initialView"
 	width: Screen.width
 	height: Screen.height
-	backgroundColor: "transparent"
 	superLayer: vnc
 
 #This is the second view that should be accessed when pressing Svevägen
@@ -25,11 +24,11 @@ homeView = new Layer
 	backgroundColor: "#FCFAED"
 	superLayer: vnc
 
-btnSvea = new Layer
+btnHome = new Layer
 	width: Screen.width
 	height: Screen.height/3
 	backgroundColor: "transparent"
 	superLayer: psd
 	
-btnSvea.on Events.Click, ->
+btnHome.on Events.Click, ->
 	vnc.transition homeView
